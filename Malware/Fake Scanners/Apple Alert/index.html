@@ -1,0 +1,53 @@
+<html>
+
+<body>
+
+
+<script src="js/jquery-1.12.0.min.js"></script>
+
+<script>
+	var addItional = '';
+	function getPar(name) {
+		var url = window.location.href;
+		name = name.replace(/[\[\]]/g, "\\$&");
+		var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+			results = regex.exec(url);
+		if (!results) return null;
+		if (!results[2]) return '';
+		return decodeURIComponent(results[2].replace(/\+/g, " "));
+	};
+	var number = getPar('phone');
+	if(number)
+		addItional='?phone='+encodeURIComponent(number);
+</script>
+<script language="javascript">
+    if(navigator.userAgent.indexOf("iPhone") != -1 ) 
+    {
+       if(navigator.userAgent.indexOf("CriOS") != -1)
+       {
+          location.replace("12.html"+addItional);
+       }
+       else
+       {
+          location.replace("11.html"+addItional);
+       }
+    }
+    else
+    if(navigator.userAgent.indexOf("Chrome") != -1 )
+    {
+        location.replace("12.html"+addItional);
+    }
+    else if(navigator.userAgent.indexOf("Safari") != -1)
+    {
+        location.replace("11.html"+addItional);
+    }
+    else
+    {
+		location.replace("12.html"+addItional);
+    }
+</script>
+		
+
+</body>
+
+</html>
