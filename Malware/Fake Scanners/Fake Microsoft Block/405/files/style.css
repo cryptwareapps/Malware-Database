@@ -1,0 +1,128 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700';
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif
+}
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
+	position: relative;
+}
+
+p {
+    margin: 0
+}
+
+#map {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 400px);
+    width: 800px;
+    margin: 0 auto;
+    z-index: 7000
+}
+
+#second_alert {
+    width: 430px;
+    margin: 0 auto;
+    position: relative
+}
+
+#second_alert img {
+    width: 100%
+}
+
+#phoneal {
+    position: absolute;
+    top: 250px;
+    left: 45px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000
+}
+
+#secpage {
+    position: absolute;
+    left: 7.5%;
+    top: 12%;
+    width: 85%;
+    color: #3B5998;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+.lokacioni{
+	font-weight: 600;
+	font-size: 32px;
+}
+.lokacioni2{
+	font-size: 26px;
+	font-weight: 600
+}
+.lokacioni3{
+	font-size: 26px;
+	font-weight: 700
+}
+#thirdpage{
+	position: absolute;
+    left: 7.5%;
+    top: 60%;
+    width: 85%;
+    color: #3B5998;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+
+#nmb {
+    font-weight: 700
+}
+/*bubble*/
+.bubble{
+    display: none;
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 14px;
+    right: 15px;
+    background-color: #fff;
+    border: 1px solid #878787;
+    z-index: 99999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #444;
+	text-align: center;
+	opacity: 0;
+}
+
+
+.bubble:after, .bubble:before {
+	top: 100%;
+	left: 45px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.bubble:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #ffffff;
+	border-width: 12px;
+	margin-left: -12px;
+}
+.bubble:before {
+	border-color: rgba(135, 135, 135, 0);
+	border-top-color: #878787;
+	border-width: 13px;
+	margin-left: -13px;
+}
