@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding-right: 25px;
+    padding-left: 25px;
+    height: 350px;
+    align-items: center;
+    border-radius: 0;
+}
+
+.container1>div{
+    width: 30%;
+    text-align: center;
+
+}
+
+.container1 {
+    background-color: rgba(0,0,0,.05);
+    justify-content: space-around;
+}
+
+.container2 {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 350px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #0078d7;
+    color: white;
+}
+
+.container2>div {
+    text-align: center;
+}
+
+.key-input {
+    padding-right: 25px;
+    padding: 4px 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.4);
+    background-color: rgba(255,255,255,.4);
+    height: 2.25rem;
+    display: block;
+    max-width: 100%;
+    background-image: none;
+}
+
+.round-div{
+    left: 50px;
+    top: 50px;
+    margin-left: 100px;
+    margin-right: 130px;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    background-color: rgba(255,255,255);
+}
+
+.bottom-text {
+    padding-top: 120px;
+}
+
+.alert-div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border-color: lightgrey;
+    border-width: 1px;
+    border-style: solid;
+    position: absolute;
+    width: 350px;
+    height: 420%px;
+    left: 40%;
+    padding: 15px;
+    top: 60px;
+}
+
+.site-feedback-btn {
+    position: absolute;
+    right: -45px;
+    top: 400px;
+    background-color: #0078d4;
+    border-color: #ffffff;
+    border-width: 1px;
+    color: #fff;
+    min-width: 120px;
+    padding: 9px 12px 10px;
+    max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    text-overflow: clip;
+    line-height: 1;
+    transform: rotate(270deg);
+    border-style: solid;
+    margin: 0;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+}

