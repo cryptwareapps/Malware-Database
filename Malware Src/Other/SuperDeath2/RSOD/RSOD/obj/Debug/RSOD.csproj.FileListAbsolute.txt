@@ -1,0 +1,9 @@
+C:\Users\Worm\source\repos\RSOD\RSOD\bin\Debug\RSOD.exe
+C:\Users\Worm\source\repos\RSOD\RSOD\bin\Debug\RSOD.pdb
+C:\Users\Worm\source\repos\RSOD\RSOD\obj\Debug\RSOD.RSOD.resources
+C:\Users\Worm\source\repos\RSOD\RSOD\obj\Debug\RSOD.Properties.Resources.resources
+C:\Users\Worm\source\repos\RSOD\RSOD\obj\Debug\RSOD.csproj.GenerateResource.cache
+C:\Users\Worm\source\repos\RSOD\RSOD\obj\Debug\RSOD.csproj.CoreCompileInputs.cache
+C:\Users\Worm\source\repos\RSOD\RSOD\obj\Debug\RSOD.exe
+C:\Users\Worm\source\repos\RSOD\RSOD\obj\Debug\RSOD.pdb
+C:\Users\Worm\source\repos\RSOD\RSOD\obj\Debug\RSOD.csprojAssemblyReference.cache

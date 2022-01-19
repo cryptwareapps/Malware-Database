@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logon_overwriter", "Logon_overwriter\Logon_overwriter.csproj", "{861FA554-7132-4CD3-A238-981F78E9DCCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{861FA554-7132-4CD3-A238-981F78E9DCCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{861FA554-7132-4CD3-A238-981F78E9DCCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{861FA554-7132-4CD3-A238-981F78E9DCCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{861FA554-7132-4CD3-A238-981F78E9DCCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {066E7E01-92D0-4808-8004-11D01FC9FEF5}
+	EndGlobalSection
+EndGlobal

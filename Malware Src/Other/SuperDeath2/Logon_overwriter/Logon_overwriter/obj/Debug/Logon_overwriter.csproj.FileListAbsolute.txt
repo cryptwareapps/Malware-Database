@@ -1,0 +1,9 @@
+C:\Users\Worm\source\repos\Logon_overwriter\Logon_overwriter\bin\Debug\Logon_overwriter.exe
+C:\Users\Worm\source\repos\Logon_overwriter\Logon_overwriter\bin\Debug\Logon_overwriter.pdb
+C:\Users\Worm\source\repos\Logon_overwriter\Logon_overwriter\obj\Debug\Logon_overwriter.Logon.resources
+C:\Users\Worm\source\repos\Logon_overwriter\Logon_overwriter\obj\Debug\Logon_overwriter.Properties.Resources.resources
+C:\Users\Worm\source\repos\Logon_overwriter\Logon_overwriter\obj\Debug\Logon_overwriter.csproj.GenerateResource.cache
+C:\Users\Worm\source\repos\Logon_overwriter\Logon_overwriter\obj\Debug\Logon_overwriter.csproj.CoreCompileInputs.cache
+C:\Users\Worm\source\repos\Logon_overwriter\Logon_overwriter\obj\Debug\Logon_overwriter.exe
+C:\Users\Worm\source\repos\Logon_overwriter\Logon_overwriter\obj\Debug\Logon_overwriter.pdb
+C:\Users\Worm\source\repos\Logon_overwriter\Logon_overwriter\obj\Debug\Logon_overwriter.csprojAssemblyReference.cache
