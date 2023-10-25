@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WOW\keyboard\advanced]
+"wizard_installed"=dword:00000001
+"wizard_registered"=dword:00000002
